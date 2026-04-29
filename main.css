@@ -1,0 +1,75 @@
+/* Reset */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, sans-serif;
+}
+
+body{
+  background:#f1f5f9;
+}
+
+/* HEADER */
+.header{
+  background: linear-gradient(rgba(15,23,42,0.8), rgba(15,23,42,0.9)),
+              url('images/bg.jpg');
+  background-size:cover;
+  background-position:center;
+  color:#fff;
+  padding:20px;
+}
+
+/* NAVBAR */
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.logo{
+  font-size:22px;
+  font-weight:bold;
+}
+
+.menu a{
+  color:#fff;
+  margin-left:15px;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.menu a:hover{
+  color:#38bdf8;
+}
+
+/* HERO TEXT */
+.hero{
+  text-align:center;
+  margin-top:40px;
+}
+
+.hero h1{
+  font-size:28px;
+  margin-bottom:10px;
+}
+
+.hero p{
+  font-size:16px;
+  color:#cbd5f5;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+  .nav{
+    flex-direction:column;
+  }
+
+  .menu{
+    margin-top:10px;
+  }
+
+  .hero h1{
+    font-size:20px;
+  }
+}
